@@ -48,7 +48,7 @@ function App() {
       // console.log(deployedNetwork1.address);
 
       // //creating  contract instance
-      const cont = new ethers.Contract(deployedNetwork1.address, contractABI.abi, signer);
+      const cont = new ethers.Contract(deployedNetwork1?.address, contractABI.abi, signer);
 
       setSmartContract(cont);
     };
